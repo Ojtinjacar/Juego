@@ -41,7 +41,7 @@ public class Juego1 extends JFrame {
         private int y;
         
         public Panel1() {
-      timer = new Timer(25, this);
+      timer = new Timer(80, this);
         timer.start();
     }
         @Override
@@ -61,8 +61,8 @@ public class Juego1 extends JFrame {
            x+=112;
           }
          x=0;
-         Grafico.drawImage(MuñecoAnimacion, x, 600, this);
-         Grafico.drawImage(MuñecoAnimacion, x,y, x+116, y+134,(this.secuencia*116),0,(this.secuencia*116)+116,134, this);
+         
+         Grafico.drawImage(MuñecoAnimacion, x,600, x+116, y+734,(this.secuencia*116),0,(this.secuencia*116)+116,134, this);
             System.out.println(secuencia); 
            
            
